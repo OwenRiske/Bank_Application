@@ -1,3 +1,5 @@
+//Owen Riske
+
 package com.company;
 
 
@@ -13,6 +15,7 @@ public class account {
     }
 
     void changeCash(double money){
+        //only change cash if it won't put the account as less than 0
         if(this.money+money>=0) {
             this.money += money;
         }
@@ -20,7 +23,6 @@ public class account {
             System.out.println("Not enough money in the account for the withdrawal");
         }
     }
-
 
 
     String getAccountName(){
